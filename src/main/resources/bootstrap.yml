@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-git
+  cloud:
+    config:
+      env: dev
+      uri: http://localhost:8888/
+      profile: dev
+      label: master
+server:
+  port: 8889
+endpoints:
+  restart:
+    enabled: false
+management:
+  security:
+    enabled: false
