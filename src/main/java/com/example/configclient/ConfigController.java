@@ -18,7 +18,7 @@ public class ConfigController {
     private String test;
 
     @RequestMapping("/configInfo")
-    String hello() {
+    public String hello() {
         return "info.profile: " + profile + " info.from: " + from + " test: " + test + " !";
     }
 }
